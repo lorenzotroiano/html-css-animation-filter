@@ -80,10 +80,61 @@
   }
 
 
-  .ex-12-top-white:hover, .ex-12-bottom-white:hover, .ex-13-bottom-white:hover, .ex-13-top-white:hover {
-    animation: move-border 2s alternate infinite;  }
+  /* .ex-12-top-white {
+    animation: move-border 3s alternate;
+  } */
     
     @keyframes move-border {
+        0% {
+          transform: translateX(0);
+        }
+        50% {
+          transform: translateX(80px);
+        }
+        100% { 
+            transform: translateX(0);
+        }
+      }
+
+
+
+
+      /* .ex-12-bottom-white {
+        animation: moveborder 3s alternate;
+      } */
+
+
+      @keyframes moveborder {
+        0% {
+          transform: translateX(0px);
+        }
+        50% {
+          transform: translateX(-80px);
+
+        }
+        100% { 
+            transform: translateX(0);
+        }
+      }
+
+      .ex-12-button:hover .ex-12-top-white {
+        animation: move-border 3s alternate;
+
+      }
+
+      .ex-12-button:hover .ex-12-bottom-white {
+        animation: moveborder 3s alternate;
+      }
+    
+          
+
+
+      .ex-13-button:hover .ex-13-top-white {
+        animation: move-border2 3s alternate;
+
+      }
+
+      @keyframes move-border2 {
         from {
           transform: translateX(0);
         }
@@ -94,6 +145,19 @@
 
 
 
+      .ex-13-button:hover .ex-13-bottom-white {
+        animation: moveborder2 3s alternate;
+      }
 
-
-  
+      @keyframes moveborder2 {
+        from {
+          transform: translateX(10px);
+        }
+        to {
+          transform: translateX(-80px);
+        }
+      }
+    
+        
+    
+      
