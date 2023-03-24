@@ -80,18 +80,20 @@
   }
 
 
-  .ex-12-top-white:hover {
+  .ex-12-top-white:hover, .ex-12-bottom-white:hover, .ex-13-bottom-white:hover, .ex-13-top-white:hover {
+    animation: move-border 2s alternate infinite;  }
     
-    animation: spostare 1s linear;
-
-  }
-
-
-  @keyframes spostare {
-    0% {
-        transform: translateX(0);
+    @keyframes move-border {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(80px);
+        }
       }
-      100% {
-        transform: rotate(200px);
-      }
-    }
+
+
+
+
+
+  
