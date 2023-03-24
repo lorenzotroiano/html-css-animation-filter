@@ -134,23 +134,35 @@
       
       
       .ex-13-button:hover .ex-13-top-white {
-        animation: move-border2 3s alternate;
+        animation: move-border2 3s linear;
 
       }
 
       @keyframes move-border2 {
         0% {
-          transform: translateX(-20px);
+          top: -10px;
+          left: 10%;
         }
-        25% {
-          transform: translateX(120px);
+        20% {
+          top: -10px;
+          left: calc(100% - 30px);
         }
 
-        50% { transform: translateY(40px);}
+        40% { top:100% ;
+        left: calc(100% - 30px);}
 
-        75% {transform: translateX(-120px);}
-        /* 26% { transform: translateY(120px);}
-        40% { transform: translateY(10px);} */
+        60% {top: 100% ;
+          left: -10px;
+        }
+        
+        80% {
+          top: 10px;
+          left: -10%;
+        }
+        100% {
+          top: -10px;
+          left: -10%;
+        }
       }
 
 
@@ -160,13 +172,34 @@
       }
 
       @keyframes moveborder2 {
-        from {
-          transform: translateX(0px);
+      
+        0% {
+          bottom: -10px;
+          right: 20%;
         }
-        to {
-          transform: translateX(-80px);
+        20% {
+          bottom: -10px;
+          right: calc(100% - 30px);
+        }
+
+        40% { bottom: 100%;
+          right: calc(100% - 30px) }
+
+        60% {
+          bottom: 100%;
+          right: -20%;
+        }
+        
+        80% {
+          bottom: -10px;
+          right: -20%;
+        }
+        100% {
+          bottom: -10px;
+          right: 20%;
         }
       }
+      
     
         
     
