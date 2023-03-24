@@ -1,0 +1,97 @@
+/* esercizio 1 */
+.ex-1-square:hover {
+            background-color: red;
+}
+
+
+.ex-2-square:active {
+      width: 100%;
+}
+
+.ex-3-square:hover {
+    border-radius: 50%;
+}
+
+
+.ex-4-square:hover {
+    opacity: 0;
+}
+
+
+.ex-5-square:hover {
+    
+    transform: scale(1.5);
+}
+
+.ex-5-square:active {
+    transform: scale(0.5);
+}
+
+
+
+.ex-6-img:hover {
+    filter: grayscale(1);
+}
+
+
+.ex-8-img {
+    transition: all 2s ease;
+}
+
+.ex-8-img:hover {
+    filter: grayscale(70%) sepia(90%);
+    border-radius: 25px;
+}
+
+
+
+
+.ex-9-img:hover {
+    filter: grayscale(70%) sepia(90%);
+    border-radius: 25px;
+    transform: scale(1.3);
+}
+
+
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+
+
+
+.ex-11-icon:hover {
+    animation: girare 2s linear;
+}
+
+
+  @keyframes girare {
+    0% {
+        transform: rotate(0deg)
+    }
+    75% {
+        transform: rotate(290deg);
+    }
+  }
+
+
+  .ex-12-top-white:hover {
+    
+    animation: spostare 1s linear;
+
+  }
+
+
+  @keyframes spostare {
+    0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: rotate(200px);
+      }
+    }
